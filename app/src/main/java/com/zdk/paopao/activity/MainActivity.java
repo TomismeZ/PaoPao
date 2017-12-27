@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 //
         ImageAdapter adapter = new ImageAdapter(imageInfos, this);
         lv.setAdapter(adapter);
+
+
     }
 
     /**

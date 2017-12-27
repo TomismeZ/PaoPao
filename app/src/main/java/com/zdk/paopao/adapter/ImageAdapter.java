@@ -3,10 +3,13 @@ package com.zdk.paopao.adapter;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewSwitcher;
 
 import com.bumptech.glide.Glide;
 import com.zdk.paopao.R;
@@ -71,10 +74,11 @@ public class ImageAdapter extends BaseAdapter {
         //添加元素给gridview
         holder.gridView.setAdapter(new GridViewAdapter(context, imageInfo.getImageUrls()));
 
-        Glide.with(context).load(imageInfo.getImageUrl()).into(holder.image_content);
+       Glide.with(context).load(imageInfo.getImageUrl()).into(holder.image_content);
 //        if (imageInfo.getAgree() > 0) {
 //            holder.good.setText("赞(" + imageInfo.getAgree() + ")");
 //        }
+
 
         if (imageInfo.getComment() > 0) {
             holder.comment.setText("评论(" + imageInfo.getComment() + ")");

@@ -41,6 +41,7 @@
         android:id="@+id/image_content"
         android:layout_width="100dp"
         android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
         android:src="@mipmap/ic_launcher"/>
 
     <GridView
@@ -51,6 +52,8 @@
 
         android:columnWidth="80dp"
         android:stretchMode="columnWidth"/>
+
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
